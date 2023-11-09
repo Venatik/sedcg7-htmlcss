@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+
+    <!--Login form-->
+    <form action="" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder="Username" id="username" required/> <!--also has a value="" attribute-->
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Password" id="password" required/>
+        <br>
+        <br>
+        <!--It's the same if you use either option (input or button)-->
+        <button type="submit">Click Me</button>
+
+        <br>
+        <br>
+    </form>
+
+    <!--Comment form (textarea)-->
+    <form action="" method="POST">
+        <label for="comment">Leave a comment</label>            <br>
+        <textarea id="comment" name="comment" cols="40" rows="10" placeholder="Your comment here"></textarea>
+        <br>
+        <input type="submit" value="Submit"/>
+    </form>
+    <br>
+    <br>
+
+    <!--Music-->
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Radio Inputs</legend>
+            <p>What is your favorite genre?</p>
+
+            <input type="radio" name="music-genre" id="rock" value="Rock"/>
+            <label for="rock">Rock</label>
+            <br>
+            <input type="radio" name="music-genre" id="jazz" value="Jazz"/>
+            <label for="jazz">Jazz</label>
+            <br>
+            <input type="radio" name="music-genre" id="hip-hop" value="Hip Hop"/>
+            <label for="hip-hop">Hip Hop</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Checkboxes</legend>
+            <p>What are your favorite music streaming services?</p>
+
+            <input type="checkbox" name="service" id="applemusic" value="AppleMusic"/>
+            <label for="applemusic">Apple Music</label>
+            <br>
+            <br>
+            <input type="checkbox" name="service" id="spotify" value="Spotify"/>
+            <label for="spotify">Spotify</label>
+            <br>
+            <br>
+            <input type="checkbox" name="service" id="tidal" value="Tidal"/>
+            <label for="tidal">Tidal</label>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dropdown Menu</legend>
+            <label for="device">What device do you listen to music on?</label>
+
+            <select name="device" id="device">
+                <option value="">Please select</option>
+                <option value="Phone">Phone</option>
+                <option value="PC">PC</option>
+                <option value="Walkman">Walkman</option>
+                <option value="iPod">iPod</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Multiple Input Dropdown/Select List</legend>
+            <label for="instruments">Which instruments do you play?</label>
+
+            <select name="instruments" id="instruments" multiple>
+                <option value="Guitar">Guitar</option>
+                <option value="Bass">Bass</option>
+                <option value="Drums">Drums</option>
+                <option value="Ukulele">Ukulele</option>
+                <option value="Accordion">Accordion</option>
+            </select>
+        </fieldset>
+    </form>
+    
+</body>
+
+</html>
