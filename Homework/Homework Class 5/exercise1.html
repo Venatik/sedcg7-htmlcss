@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exercise - Testform</title>
+</head>
+
+<body>
+    <fieldset style="background-color: rgb(212, 207, 207);">
+        <h2><strong>Testform</strong></h2>
+    </fieldset>
+
+    <fieldset>
+        <form action="" method="POST">
+            <label for="username">Name</label>
+            <input type="text" name="username" id="username" required style="margin-left: 200px;"/>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required style="margin-left: 177px;"/>
+            <br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="Male" style="margin-left: 190px;"/>Male<br>
+            <input type="radio" name="gender" value="Female" style="margin-left: 241px;"/>Female
+            <br>
+            <label for="continent">Continent</label>
+            <select name="continent" id="continent" style="margin-left: 175px;">
+                <option value="">Please select</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+                <option value="NA">North America</option>
+                <option value="SA">South America</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Europe">Europe</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <br>
+            <p>Meals</p>
+            <input type="checkbox" name="meal" id="breakfast" value="Breakfast" style="margin-left: 240px;"/>
+            <label for="breakfast">Breakfast</label>
+            <br>
+            <br>
+            <input type="checkbox" name="meal" id="lunch" value="Lunch" style="margin-left: 240px;"/>
+            <label for="lunch">Lunch</label>
+            <br>
+            <br>
+            <input type="checkbox" name="meal" id="dinner" value="Dinner" style="margin-left: 240px;"/>
+            <label for="dinner">Dinner</label>
+            <br>
+            <br>
+            <label for="remark">Remark</label>
+            <textarea id="comment" name="comment" cols="40" rows="5" style="margin-left: 183px;"></textarea>
+            <br>
+            <br>
+            <button type="reset" style="float: right;">Cancel</button>
+            <button type="submit" style="float: right;">Send</button>
+        </form>
+    </fieldset>
+    
+</body>
+
+</html>
