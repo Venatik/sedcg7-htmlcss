@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exercise - Testform</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+    <table style="width: 200px; height: auto; border: 1px solid;">
+        <tbody>
+            <tr>
+                <td colspan="3" style="background-color: gray; border: 1px solid;"><b>Testform</b></td>
+            </tr>
+            <tr>
+                <td><label for="username">Name</label></td>
+                <td colspan="2">
+                    <input type="text" name="username" id="username" required style="margin-left: 100px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td colspan="2">
+                    <input type="password" name="password" id="password" required style="margin-left: 100px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td colspan="2">
+                    <input type="radio" name="gender" value="Male" id="gender" style="margin-left: 100px;"/>Male<br>
+                    <input type="radio" name="gender" value="Female" id="gender" style="margin-left: 100px;"/>Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="continent">Continent</label></td>
+                <td colspan="2">
+                    <select name="continent" id="continent" style="margin-left: 100px;">
+                        <option value="">Please select</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Africa">Africa</option>
+                        <option value="NA">North America</option>
+                        <option value="SA">South America</option>
+                        <option value="Antarctica">Antarctica</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: text-top;"><label>Meals</label></td>
+                <td colspan="2">
+                    <input type="checkbox" name="meal" id="breakfast" value="Breakfast" style="margin-left: 100px;"/>
+                    <label for="breakfast">Breakfast</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="meal" id="lunch" value="Lunch" style="margin-left: 100px;"/>
+                    <label for="lunch">Lunch</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="meal" id="dinner" value="Dinner" style="margin-left: 100px;"/>
+                    <label for="dinner">Dinner</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: text-top;"><label for="comment">Remark</label></td>
+                <td colspan="2">
+                    <textarea id="comment" name="comment" cols="40" rows="5" style="margin-left: 100px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="background-color: gray; border: 1px solid;">
+                    <button type="reset" style="float: right;">Cancel</button>
+                    <button type="submit" style="float: right;">Send</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+    
+</body>
+
+</html>
