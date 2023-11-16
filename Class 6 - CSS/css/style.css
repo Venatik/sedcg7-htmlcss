@@ -9,7 +9,7 @@
 /* Type (tag) Selector */
 
 p {
-    color: green;
+    color: blue;
 }
 
 /* Class Selector */
@@ -35,7 +35,7 @@ p {
 /* Child and general sibling selector */
 
 .bold > span {
-    color: blue;
+    color: black;
 }
 
 .bold > span ~ span {
@@ -70,5 +70,11 @@ h3 + p {
 
 h3 ~ nav {
     padding: 10px;
-    background-color: yellow;
+    background-color: yellow !important;
 }
+
+h3 ~ nav {
+    padding: 10px;
+    background-color: green;
+}
+
