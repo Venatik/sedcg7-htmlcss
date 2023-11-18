@@ -1,0 +1,39 @@
+.color-name {
+    color: red;
+}
+
+.color-hex {
+    color: #34a4eb;
+}
+
+.color-rgb {
+    color: rgb(183, 235, 52);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.color-hsl {
+    color: hsl(77, 82%, 56%)
+}
+
+h1 {
+    color: blue;
+    background-color: hsla(188, 100%, 50%, 0.5);
+}
+
+a {
+    text-decoration: underline;
+    cursor: crosshair;
+    color: black;
+}
+
+#link:visited {
+    color: red;
+}
+
+#link:hover {
+    color: green;
+}
+
+#link:active {
+    color: pink
+}
