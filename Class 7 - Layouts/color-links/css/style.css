@@ -34,6 +34,10 @@ a {
     color: green;
 }
 
+#link:focus {
+    color: blue;
+}
+
 #link:active {
     color: pink
 }
