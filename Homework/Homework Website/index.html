@@ -11,12 +11,14 @@
         <div id="header-logo">
             <img src="media/The-Dark-Tower_LOGOver.jpg" alt="The Dark Tower Logo" id="logo"/>
             <h1>The Dark Tower</h1>
+        </div>
+        <nav>   
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav> 
     </header>
     <main>
         <section id="description">
@@ -29,26 +31,46 @@
             </div>
         </section>
         <section id="series">
-            <div>
+            <div class="book-row">
                 <h2>The Series</h2>
-                    <img src="media/dark-tower-covers.jpg" usemap="#image-map" id="image-map"/>
-
-                    <map name="image-map">
-                        <area target="_blank" alt="thegunslinger" title="thegunslinger" href="https://en.wikipedia.org/wiki/The_Dark_Tower:_The_Gunslinger" coords="3,3,197,305" shape="rect">
-                        <area target="_blank" alt="drawing" title="drawing" href="https://en.wikipedia.org/wiki/The_Dark_Tower_II:_The_Drawing_of_the_Three" coords="203,3,397,305" shape="rect">
-                        <area target="_blank" alt="wastelands" title="wastelands" href="https://en.wikipedia.org/wiki/The_Dark_Tower_III:_The_Waste_Lands" coords="405,1,595,302" shape="rect">
-                        <area target="_blank" alt="wizard" title="wizard" href="https://en.wikipedia.org/wiki/The_Dark_Tower_IV:_Wizard_and_Glass" coords="603,2,797,303" shape="rect">
-                        <area target="_blank" alt="wolves" title="wolves" href="https://en.wikipedia.org/wiki/The_Dark_Tower_V:_Wolves_of_the_Calla" coords="4,309,196,610" shape="rect">
-                        <area target="_blank" alt="susannah" title="susannah" href="https://en.wikipedia.org/wiki/The_Dark_Tower_VI:_Song_of_Susannah" coords="203,309,397,611" shape="rect">
-                        <area target="_blank" alt="thedarktower" title="thedarktower" href="https://en.wikipedia.org/wiki/The_Dark_Tower_VII:_The_Dark_Tower" coords="404,311,598,611" shape="rect">
-                        <area target="_blank" alt="wind" title="wind" href="https://en.wikipedia.org/wiki/The_Dark_Tower:_The_Wind_Through_the_Keyhole" coords="605,309,796,611" shape="rect">
-                    </map>
+                <div class="book-column">
+                <h3>The Dark Tower I: The Gunslinger</h3>
+                <a href="https://en.wikipedia.org/wiki/The_Dark_Tower:_The_Gunslinger" target="_blank"><img src="media/dt1.jpg"/></a>
+                </div>
+                <div class="book-column">
+                <h3>The Dark Tower II: The Drawing of the Three</h3>
+                <a href="https://en.wikipedia.org/wiki/The_Dark_Tower_II:_The_Drawing_of_the_Three" target="_blank"><img src="media/dt2.jpg"/></a>
+                </div>  
+                <div class="book-column">
+                <h3>The Dark Tower III: The Waste Lands</h3>
+                <a href="https://en.wikipedia.org/wiki/The_Dark_Tower_III:_The_Waste_Lands" target="_blank"><img src="media/dt3.jpg"/></a>
+                </div>
+                <div class="book-column">
+                <h3>The Dark Tower IV: Wizard and Glass</h3>
+                <a href="https://en.wikipedia.org/wiki/The_Dark_Tower_IV:_Wizard_and_Glass" target="_blank"><img src="media/dt4.jpg"/></a>
+                </div>
+                <div class="book-column">
+                <h3>The Dark Tower: The Wind Through the Keyhole</h3>
+                <a href="https://en.wikipedia.org/wiki/The_Dark_Tower:_The_Wind_Through_the_Keyhole" target="_blank"><img src="media/dt8.jpg"/></a>
+                </div>
+                <div class="book-column">
+                <h3>The Darktower V: Wolves of the Calla</h3>
+                <a href="https://en.wikipedia.org/wiki/The_Dark_Tower_V:_Wolves_of_the_Calla" target="_blank"><img src="media/dt5.jpg"/></a>
+                </div>
+                <div class="book-column">
+                <h3>The Dark Tower VI: Song of Susannah</h3>
+                <a href="https://en.wikipedia.org/wiki/The_Dark_Tower_VI:_Song_of_Susannah" target="_blank"><img src="media/dt6.jpg"/></a>
+               </div>
+                <div class="book-column">
+                <h3>The Dark Tower VII: The Dark Tower</h3>
+                <a href="https://en.wikipedia.org/wiki/The_Dark_Tower_VII:_The_Dark_Tower" target="_blank"><img src="media/dt7.jpg"/></a>
+              </div>
             </div>
         </section>
         <section id="info-section">
             <div>
                 <h2>Additional Information</h2>
-                <table>
+                <table id="info-table">
                     <thead>
                         <th>#</th>
                         <th>Title</th>
@@ -137,7 +159,7 @@
             </div>
         </section>
         <section id="videos">
-            <div>
+            <div id="interviews">
                 <h2>Stephen King Interviews and Tips</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bDyN8d3xM0U?si=wgKVN14p5isfwaUD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/kRL3d0K-adw?si=KgvkbBU95DV6C8gZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -188,11 +210,14 @@
             </div>
         </section>
     </main>
-    <footer>
+    <nav class="bottom-nav">
         <a href="#description">Back to Top</a>
         <a href="#series">Series</a>
         <a href="#info-section">Information</a>
         <a href="#videos">Videos</a>
+    </nav>
+    <footer>
+        <p>Copyright TDT 2023 &copy;</p>
     </footer>
 </body>
 </html>
