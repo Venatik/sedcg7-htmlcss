@@ -36,6 +36,7 @@ table, th, td {
 
 .book-column {
     float: left;
+    margin-left: 250px;
     width: 12%;
     padding: 5px;
 }
