@@ -1,0 +1,64 @@
+* {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: Arial;
+    color: white;
+}
+
+h1 {
+    color: whitesmoke;
+    height: 150px;
+    text-align: center;
+    padding-top: 75px;
+}
+
+h2 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+#logo {
+    float: left;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    text-align: end;
+}
+
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.paragraph>img {
+    float: left;
+    margin: 15px;
+}
+
+footer {
+    text-align: end;
+}
+
+button {
+    background-color: lightcoral;
+    color: black;
+    border: none;
+    font-size: large;
+}
+
+.paragraph {
+    font-size: large;
+    font-weight: 400;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    cursor: crosshair;
+}
