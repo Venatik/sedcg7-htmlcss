@@ -17,15 +17,24 @@ h2 {
 }
 
 #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 350px;
+}
+
+/* #logo {
     float: left;
+} */
+
+ul {
+    text-align: end;
+    list-style: none;
 }
 
 li {
     display: inline;
-}
-
-ul {
-    text-align: end;
 }
 
 
@@ -87,4 +96,11 @@ a:hover {
 
 #interviews {
     text-align: center;
+}
+
+div fieldset {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
