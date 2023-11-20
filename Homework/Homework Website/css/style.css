@@ -21,7 +21,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 350px;
+    height: 300px;
 }
 
 /* #logo {
@@ -86,8 +86,13 @@ button {
     font-weight: 400;
 }
 
+a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 a:visited {
-    color: gray;
+    color: rgb(133, 130, 130);
 }
 
 a:hover {
@@ -103,4 +108,17 @@ div fieldset {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+#about {
+    float: left;
+}
+
+.trivia {
+    text-align: center;
+    float: right;
+    width: 20em;
+    shape-outside: content-box;
+    border: 1px solid white;
+    margin: 10px;
 }
