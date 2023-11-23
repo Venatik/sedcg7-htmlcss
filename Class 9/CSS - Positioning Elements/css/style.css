@@ -1,0 +1,56 @@
+#body {
+    height: 3000px;
+}
+
+.relative {
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
+
+.absolute-parent {
+    position: relative;
+    border: 1px solid red;
+    margin: 50px 0;
+}
+
+.absolute-child {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    background-color: yellow;
+}
+
+.sub-header {
+    position: relative;
+    z-index: 1;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    color: red;
+}
+
+/* Centered navigation menu */
+.sticky {
+    list-style: none;
+    position: sticky;
+    top: 10px;
+    margin-left: 50%;
+}
+
+li {
+    display: inline;
+}
+
+.float {
+    float: left;
+    width: 60px;
+    height: 50px;
+}
+
+.clear-style {
+    clear: left;
+}
