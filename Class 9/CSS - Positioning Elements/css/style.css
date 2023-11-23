@@ -33,7 +33,7 @@
     color: red;
 }
 
-/* Centered navigation menu */
+/* Centered navigation menu - not ideal way */
 .sticky {
     list-style: none;
     position: sticky;
