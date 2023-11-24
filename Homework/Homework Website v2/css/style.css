@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
 * {
     background-color: rgba(0, 0, 0, 0.8);
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -14,6 +17,7 @@ h1 {
 h2 {
     text-align: center;
     color: whitesmoke;
+    text-shadow: 7px 3px 4px rgba(200,88,88,0.83);
 }
 
 #logo {
@@ -121,4 +125,6 @@ div fieldset {
     shape-outside: content-box;
     border: 1px solid white;
     margin: 10px;
+    height: 500px;
+    overflow: scroll;
 }
