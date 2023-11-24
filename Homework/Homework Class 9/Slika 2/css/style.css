@@ -8,8 +8,8 @@
     /* border: 1px solid black; */
     width: 600px;
     height: 600px;
-    margin-top: 150px;
-    margin-left: 350px;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
 .div-1 {
@@ -202,7 +202,7 @@
 
 .div-18 {
     position: absolute;
-    border-top: 6px solid black;
+    border-top: 12px solid black;
     border-left: 10px solid black;
     border-right: 12px solid black;
     width: 59%;
