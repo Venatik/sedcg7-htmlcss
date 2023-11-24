@@ -64,7 +64,7 @@
 
 .div-6 {
     position: absolute;
-    border-top: 6px solid black;
+    border-top: 12px solid black;
     border-right: 6px solid black;
     width: 12.5%;
     height: 26%;
@@ -178,7 +178,7 @@
 .div-16 {
     position: absolute;
     border-top: 6px solid black;
-    border-left: 6px solid black;
+    border-left: 12px solid black;
     border-right: 12px solid black;
     border-bottom: 12px solid black;
     width: 35%;
@@ -190,7 +190,7 @@
 .div-17 {
     position: absolute;
     border-top: 6px solid black;
-    border-left: 6px solid black;
+    border-left: 12px solid black;
     border-right: 12px solid black;
     border-bottom: 6px solid black;
     width: 35%;
