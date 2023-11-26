@@ -14,14 +14,14 @@ html {
 }
 
 #kras-logo {
-    width: 60px;
-    height: auto;
+    width: 75px;
+    height: 60px;
 }
 
 .dropbtn {
     background-color: red;
     color: white;
-    width: 60px;
+    width: 75px;
     height: 60px;
     border-radius: 0;
 }
@@ -31,7 +31,7 @@ html {
     z-index: 99;
     margin-right: 50%;
     top: 0px;
-    left: 229px;
+    left: 244px;
 }
 
 .sidebar-nav {
@@ -39,7 +39,7 @@ html {
     background-color: white;
     box-shadow: 5px 0px 20px 0px rgba(177, 177, 177, 0.75);
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
