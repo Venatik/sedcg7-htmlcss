@@ -6,26 +6,65 @@ html {
     max-width: 1920px;
 }
 
+.logo {
+    position: fixed;
+    left: 10%;
+    top: 0;
+    z-index: 99;
+}
+
+#kras-logo {
+    width: 60px;
+    height: auto;
+}
+
+.dropbtn {
+    background-color: red;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+}
+
+.dropdown {
+    position: fixed;
+    z-index: 99;
+    margin-right: 50%;
+    top: 0px;
+    left: 229px;
+}
+
 .sidebar-nav {
     width: 25%;
     background-color: white;
-    box-shadow: 5px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 0px 20px 0px rgba(177, 177, 177, 0.75);
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
     font-size: small;
+    height: 900px;
 }
 
 .sidebar-nav a {
+    display: flex;
     text-decoration: none;
-    color: rgb(209, 10, 10);
+    color: black;
     font-weight: bolder;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sidebar-nav a:hover {
+    color: red;
 }
 
 .sidebar-nav ul {
     list-style: none;
+    margin-top: 160%;
+
 }
 
 .main-content {
