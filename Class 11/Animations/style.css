@@ -1,0 +1,33 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 15px;
+    margin: 500px;
+
+    /* Mandatory properties */
+    transition-property: background-color, border-radius, transform;
+    transition-duration: 3s;
+
+    /* Optional properties */
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+
+    /* Webkits - used for older browsers */
+    -webkit-transition: all 0.5s ease 0.5s;
+    -moz-transition: all 0.5s ease 0.5s;
+    -ms-transition: all 0.5s ease 0.5s;
+    -o-transition: all 0.5s ease 0.5s;
+
+    /* Shorthand - property > duration > timing > delay */
+    transition: all 0.5s ease 0.5s;
+}
+
+.box:hover {
+    background-color: red;
+    border-radius: 50px;
+    transform: rotate(45deg) scale(1.5);
+}
