@@ -36,11 +36,16 @@ html {
     border: 0;
 }
 
+.searchbar {
+    float: right;
+}
+
 .header {
     position: sticky;
     z-index: 999;
     top: 0;
     left: 0;
+    width: 100vh;
 }
 
 .sidebar-nav {
