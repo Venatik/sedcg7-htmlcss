@@ -3,12 +3,13 @@
 html {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    max-width: 1920px;
+    max-width: 100vh;
 }
 
 .logo {
-    position: fixed;
-    left: 10%;
+    display: block;
+    position: absolute;
+    left: 0;
     top: 0;
     z-index: 99;
 }
@@ -19,20 +20,27 @@ html {
 }
 
 .dropdown {
-    position: fixed;
+    display: block;
+    position: absolute;
     z-index: 99;
-    margin-right: 50%;
     top: 0px;
-    left: 13.9%;
+    left: 100px;
 }
 
 .dropbtn {
-    position: fixed;
     background-color: rgb(228, 11, 11);
     color: white;
     width: 100px;
     height: 80px;
     border-radius: 0;
+    border: 0;
+}
+
+.header {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
 }
 
 .sidebar-nav {
@@ -46,6 +54,7 @@ html {
     z-index: 10;
     font-size: small;
     height: 100vh;
+    overflow: hidden;
 }
 
 .sidebar-nav a {
@@ -56,95 +65,120 @@ html {
     font-size: larger;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .sidebar-nav a:hover {
     color: red;
 }
 
-.sidebar-nav ul {
+.nav-list {
     list-style: none;
     margin-top: 160%;
-}
-
-.main-content {
-    display: block;
-    width: 75%;
-    height: 100%;
-    background-color: whitesmoke;
+    height: auto;
     position: absolute;
-    margin-left: 25%;
-    top: 0;
     left: 0;
-}
-
-h2 {
-    font-size: 500%;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0;
-    margin-right: 200px;
+    bottom: 0;
 }
 
 .chocolate-bars {
-    position: relative;
-    margin-left: 10%;
-    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 0px;
+    position: fixed;
+    left: 25%;
+    margin-left: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.choco-img {
+    margin-left: 100px;
+}
+
+.main-content .dorina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-content .coksa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-content .animal-kingdom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}  
+
+.main-content .kras-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-content .kras-polleo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-content .kolumbo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    display: flex;
+    margin-left: 75%;
+    font-size: 500%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .dorina, .coksa, .animal-kingdom, .kras-selection, .kras-polleo, .kolumbo {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     background-color: gray;
 }
 
 .dorina {
-    position: absolute;
-    left: 5%;
     background-color: red;
 }
 
 .coksa {
-    position: absolute;
-    left: 28%;
     background-color: blue;
 }
 
 .animal-kingdom {
-    position: absolute;
-    left: 51%;
     background-color: green;
 }
 
 .kras-selection {
-    position: absolute;
-    left: 5%;
-    top: 400px;
     background-color: rgb(61, 59, 59);
 }
 
 .kras-polleo {
-    position: absolute;
-    left: 28%;
-    top: 400px;
     background-color: rgb(133, 180, 196);
 }
 
 .kolumbo {
-    position: absolute;
-    left: 51%;
-    top: 400px;
     background-color: yellowgreen;
 }
 
 .chocolate-bars img {
-    width: 300px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
     transition: transform .2s;
 }
 
@@ -152,10 +186,11 @@ h2 {
     transform: scale(1.1);
 }
 
-button {
-    display: block;
-    margin-left: auto;
+.choco-btn {
+    display: inline-block;
+    margin-left: -200px;
     margin-right: auto;
+    margin-top: 350px;
     border: none;
     border-radius: 15px;
     background-color: transparent;
@@ -166,6 +201,7 @@ button {
     font-weight: bold;
     font-family: 'Poppins';
     text-align: center;
+    
 }
 
 button:hover {
