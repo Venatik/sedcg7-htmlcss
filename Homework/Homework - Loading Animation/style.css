@@ -96,5 +96,65 @@ p {
 }
 
 #circle1 {
-    
+    animation: revolve1 2s infinite;
+    transform-origin: center;
+}
+
+#circle3 {
+    animation: revolve2 2s infinite;
+}
+
+@keyframes revolve1 {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(50%, -50%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes revolve2 {
+
+}
+
+#square {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: whitesmoke;
+    left: 250px;
+    top: 100px;
+}
+
+#ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: white;
+    animation: ballmove 3s infinite;
+    position: relative;
+    top: 45%;
+    left: 40%;
+}
+
+@keyframes ballmove {
+    0% {
+        top: 45%;
+        left: 40%;
+    }
+    25% {
+        top: 22%;
+        left: 40%;
+    }
+    50% {
+        top: 22%;
+        left: 48%;
+    }
+    75% {
+        top: 45%;
+        left: 48%;
+    }
 }
