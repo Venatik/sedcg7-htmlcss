@@ -63,7 +63,7 @@ p {
 
 #loadingbar {
     background-color: rgb(255, 255, 255);
-    animation: loading2 2s infinite forwards ease-out;
+    animation: loading2 3s infinite forwards ease-out;
     margin-left: 250px;
 }
 
@@ -93,31 +93,48 @@ p {
 
 #circle1, #circle3 {
     background-color: rgba(255, 255, 255, 0.712);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#circle2 {
+    position: relative;
+    margin: 0;
 }
 
 #circle1 {
-    animation: revolve1 2s infinite;
-    transform-origin: center;
+    animation: revolve1 1s 1s infinite;
+    position: absolute;
+    margin: 0;
+    top: 345px;
+    left: 265px;
 }
 
 #circle3 {
-    animation: revolve2 2s infinite;
+    animation: revolve2 1s 1.5s infinite;
+    position: absolute;
+    margin: 0;
+    top: 345px;
+    left: 265px;
 }
 
 @keyframes revolve1 {
-    0% {
-        transform: translate(-50%, -50%);
+    from {
+        transform: rotate(0deg) translateX(15px);
     }
-    50% {
-        transform: translate(50%, -50%);
-    }
-    100% {
-        transform: translate(-50%, -50%);
+    to {
+        transform: rotate(360deg) translateX(15px);
     }
 }
 
 @keyframes revolve2 {
-
+    from {
+        transform: rotate(0deg) translateX(15px);
+    }
+    to {
+        transform: rotate(360deg) translateX(15px);
+    }
 }
 
 #square {
@@ -127,6 +144,7 @@ p {
     background-color: whitesmoke;
     left: 250px;
     top: 100px;
+    animation: squarefill 3.4s infinite;
 }
 
 #ball {
@@ -156,5 +174,11 @@ p {
     75% {
         top: 45%;
         left: 48%;
+    }
+}
+
+@keyframes squarefill {
+    0% {
+        width: 0;
     }
 }
