@@ -29,6 +29,10 @@ p {
     width: 100px;
 }
 
+#loadingbar {
+    margin-top: 110px;
+}
+
 #loading1 {
     position: relative;
     left: 250px;
@@ -104,7 +108,7 @@ p {
 }
 
 #circle1 {
-    animation: revolve1 1s 1s infinite;
+    animation: revolve1 ease-in-out 1.5s 1s infinite;
     position: absolute;
     margin: 0;
     top: 345px;
@@ -112,7 +116,7 @@ p {
 }
 
 #circle3 {
-    animation: revolve2 1s 1.5s infinite;
+    animation: revolve2 ease-in-out 1.5s 1.5s infinite;
     position: absolute;
     margin: 0;
     top: 345px;
